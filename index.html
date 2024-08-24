@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(135deg, rgb(243, 208, 151) ,rgb(230, 160, 120), rgb(113, 113, 248) ,rgb(250, 0, 242));
+            background-repeat: no-repeat;
+            background-size:  1800px 1400px;
+            font-family: serif;
+        }
+        #head{
+                position:relative;
+                left:570px;
+                bottom: 250px;
+                color: white;
+        }
+        h1{
+            display: inline-block;
+        }
+        h3{
+            color: white;
+        }
+        .box{
+            position: relative;
+            top: 200px;
+            right: 60px;
+            align-content: center;
+            display: inline-block;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            border: 1px rgb(255, 255, 255) solid;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            box-shadow: 7px 25px 60px rgba(6, 2, 2, 0.46);
+           
+            
+        }
+        .left-top,.center-top{
+
+            box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.464);
+        }
+        .left-top,.right-top{
+            background-color: white;
+            height: 100px;
+            border: 1px transparent solid;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .center-top{
+                    background-color: white;
+                    height: 120px;
+                    border: 1px transparent solid;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    box-shadow: -10px 0px 6px rgb(0, 0, 0);
+                    z-index: 3;
+        }
+        .centerbottom{
+            
+            background:linear-gradient(140deg,rgb(255, 119, 235),rgb(195, 0, 255),rgb(122, 0, 149));
+            height: 325px;
+            width: 300px;
+            border: 1px transparent solid;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-shadow: -10px 0px 7px rgba(0, 0, 0, 0.953);
+        }
+
+        
+            
+        
+        .leftbottom,.rightbottom{
+                            height: 310px;
+                            width: 300px;
+                            border: 1px transparent solid;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+        }
+        .leftbottom{
+            background: linear-gradient(135deg,rgba(136, 240, 204, 0.977),rgb(0, 248, 112),rgb(43, 255, 0));
+        }
+        .rightbottom{
+            background:linear-gradient(135deg,rgb(255, 189, 247),rgb(255, 140, 190),rgb(255, 48, 100))
+        }
+        li{
+            color: white;
+        }
+        .ts{
+            color: rgb(0, 136, 23);
+        }
+        .tt{
+            color: rgb(104, 1, 104);
+        }
+        .tf{
+            color: rgb(218, 68, 118);
+        }
+        button{
+            font-weight: 800;
+            border-radius: 50px;
+            height: 35px;
+            width: 150px;
+            margin-top: 70px;
+            box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.537);
+            
+        }
+        #leftbox{
+            z-index: -1;
+        }
+        #rightbox{
+            position: relative;
+            right: 80px;
+            z-index: -1;
+        }
+        #per{
+            position: relative;
+            top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="head">Creative pricing Table</h1>
+    <div class="box" id="leftbox">
+        <div class="left-top"><h1 class="ts">$26</h1><br> <b class="ts">permonth</b>
+        </div>
+            <div class="leftbottom"><h3>BASIC</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptate?</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <button class="ts" id="btn1">CHOOSE</button>
+            </div>
+            </div>
+    </div>
+    <div class="box" id="centerbox">
+        <div class="center-top"><h1 class="tt">$30</h1><br><b id="per" class="tt">permonth</b>
+        </div>
+            <div class="centerbottom"><h3>PREMIUM</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptate?</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <button  class="tt" id="btn2">CHOOSE</button>
+            </div>
+            </div>
+            <div class="box" id="rightbox">
+                <div class="right-top"><h1 class="tf">$35</h1><br> <b class="tf">permonth</b>
+                </div>
+                    <div class="rightbottom"><h3>ULTIMATE</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptate?</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                        <button  class="tf" id="btn3">CHOOSE</button>
+                    </div>
+    </div>
+</body>
+</html>
